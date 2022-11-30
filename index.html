@@ -7,41 +7,40 @@
 	<link rel="shortcut icon" href="imagens/P-logo2.png" type="image/x-icon">
 
 	<style type="text/css">
-		header {
-			background-color: rgb(220, 251, 255)
-		}
 
 		body {
 			margin: 0px;
+			
 		}
 		.footercolor {
 			background-color: rgb(220, 251, 255) ;
 		}
 
-		.header-right {
-			color: white;
-			float: right;
-			margin-top: 40px;
-			margin-right: 5%;
-			background-color: #1B9CBA;
-			padding: 9px;
-			border-radius: 0px;
+		header {
+			display: flex;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			background-color: rgb(220, 251, 255);
+			padding: 0px;
 			font-family: arial;
-			display: block;
 		}
-
-		.title {
+         header a{
+			text-decoration: none;
+			font-size: 19px;
+			color: rgb(255, 255, 255);
+			margin:0px 30px;
 			
-		}
-
+		 }
 		.menu a {
 			color: white;
 			font-weight: bold;
 			text-decoration: none;
+			font-family:'Ubuntu', sans-serif; 
 		}
-		.text-100 {
-		
-		}
+		.my-5 {
+    margin-top: 3rem!important;
+    margin-bottom: 0rem!important;}
 		h3 {
 			font-size: 35px;
 			font-family: 'Marhey', cursive;
@@ -52,11 +51,43 @@
 			font-size: 23px;
 			color:teal;
 		}
-		.img1:hover {
-			width: 230px;
+		.animals{
+			display: flex;
+			justify-content: space-evenly;
 		}
+		.animals img{
+			opacity: 0.8;
+			height: 190px;
+		}
+		.animals img:hover{
+			opacity: 1;
+			transition: 0.6s;
+			height: 230px;
+		}
+		
 		.imagens a img{
 			margin-left: 150px;
+		}
+		
+		.imagens a img{
+			margin-left: 150px;
+		}
+		
+		.imagens a img{
+			margin-left: 150px;
+		}
+		main{
+			max-width: 1300px;
+			background-color: white;
+			margin: auto;
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+			padding: 50px 20px ;
+			
+		}
+		.lii{
+			background-color: #408da7;
+			padding: 10px;
+			border-radius: 5px;
 		}
 	</style>
 
@@ -70,94 +101,93 @@
 
 </head>
 
-
-
-<body style="background-color: #ADD8E6">
+<body style="background-color: #add8e6">
 	<section>
 		<header>
-			<div class="menu">
-				<a href="index.html"><img id="logo" src="imagens/newlogo2.jpg" width="158px" height="140px"></a>
-				<div class="header-right"><a href="aves.html">Aves</a></div>
-				<div class="header-right"><a href="roedores.html">Roedores</a></div>
-				<div class="header-right"><a href="felinos.html">Felinos</a></div>
-				<div class="header-right"><a href="caes.html">Cães</a></div>
-				<div class="header-right"><a href="index.html">Início</a></div>
-			</div>
+			
+				
+				<a class="lii" href="aves.html">Aves</a>
+				<a class="lii" href="roedores.html">Roedores</a>
+				<a href="index.html"><img src="imagens/newlogo2.jpg"  height="130px"></a>
+				<a class="lii" href="felinos.html">Felinos</a>
+				<a class="lii" href="caes.html">Cães</a>
+			
 		</header>
-	</section>
-	<center>
+	</section><br>
+	<main>
+	
+		<center>
 		
-			<h3>Seja Bem Vindo!</h3>
-			<p>Somos Pet Information e temos o intuito de te auxiliar nos devidos cuidados com seu pet. Iremos te
-				indicar tudo o que for necessário, incluindo as doenças comuns e como evitá-las.</p>
-	
-	</center>
-	<div class="row">
-		<div class="col"><a href="caes.html">
-			<img src="imagens/golden-removebg-preview.png" class="img1" alt="imagem Cães" width="220px" >
-		</a></div>
-		<div class="col"><a href="felinos.html">
-			<img src="imagens/gatio-removebg-preview.png" alt="imagem Felinos" width="150px">
-		</a></div>
-		<div class="col"><a href="roedores.html">
-			<img src="imagens/chinchilla-removebg-preview.png" alt="imagem Roedores" width="220px">
-		</a></div>
-		<div class="col"><a href="aves.html">
-			<img src="imagens/ringneck-removebg-preview.png" alt="imagem Aves" width="197px">
-		</a></div>
-	</div>
-	<center>
-		<font size="5">
-			<p>Indicaremos tudo o que for necessário para a saúde do seu pet e informaremos as melhores rações
-				dependendo do tamanho da raça.</p>
-		</font>
-	</center>
-
-	<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top footercolor">
-		<div class="col mb-3">
-		  <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
-			<img src="imagens/P-logo2.png"
-			<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-		  </a>
-		  <p class="text-muted">© 2022</p>
+				<h3>Seja Bem Vindo!</h3>
+				<p>Somos Pet Information e temos o intuito de te auxiliar nos devidos cuidados com seu pet. Iremos te
+					indicar tudo o que for necessário, incluindo as doenças comuns e como evitá-las.</p>
+		
+		</center>
+		<div class="animals">
+			<a href="caes.html">
+				<img src="imagens/golden-removebg-preview.png" class="img1" alt="imagem Cães" >
+			</a>
+			<a href="felinos.html">
+				<img src="imagens/gatio-removebg-preview.png" class="img2" alt="imagem Felinos">
+			</a>
+			<a href="roedores.html">
+				<img src="imagens/chinchilla-removebg-preview.png" class="img3" alt="imagem Roedores">
+			</a>
+			<a href="aves.html">
+				<img src="imagens/ringneck-removebg-preview.png" class="img4" alt="imagem Aves">
+			</a>
 		</div>
-	
-		<div class="col mb-3">
-	
-		</div> 
-	
-		<div class="col mb-3">
-		  <h5>Desenvolvedores</h5>
-		  <ul class="nav flex-column">
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rebeca Manvailer</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ana Cristina</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Natielli Daloy</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Victor Eduardo</a></li>
-		  </ul>
-		</div>
-	
-		<div class="col mb-3">
-		  <h5>Section</h5>
-		  <ul class="nav flex-column">
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-		  </ul>
-		</div>
-	
-		<div class="col mb-3">
-		  <h5>Section</h5>
-		  <ul class="nav flex-column">
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-			<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-		  </ul>
-		</div>
-	  </footer>
+		<center>
+			<font size="5">
+				<p>Indicaremos tudo o que for necessário para a saúde do seu pet dependendo do tamanho e da raça.</p>
+			</font>
+		</center>
+		<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top footercolor">
+			<div class="col mb-3">
+			  <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+				<img src="imagens/P-logo2.png"
+				<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+			  </a>
+			  <p class="text-muted">© 2022</p>
+			</div>
+		
+			<div class="col mb-3">
+		
+			</div>
+		
+			<div class="col mb-3">
+			  <h5>Desenvolvedores</h5>
+			  <ul class="nav flex-column">
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Rebeca Manvailer</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Ana Cristina</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Natielli Daloy</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Victor Eduardo</a></li>
+			  </ul>
+			</div>
+		
+			<div class="col mb-3">
+			  <h5>Section</h5>
+			  <ul class="nav flex-column">
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+			  </ul>
+			</div>
+		
+			<div class="col mb-3">
+			  <h5>Section</h5>
+			  <ul class="nav flex-column">
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+				<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+			  </ul>
+			</div>
+		  </footer>
+	</main>
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</body>
 
